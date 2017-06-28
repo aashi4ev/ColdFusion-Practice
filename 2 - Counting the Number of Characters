@@ -1,0 +1,20 @@
+<cfmessagebox 
+name = "getname"
+icon = "question"
+message = "What is the input string?"
+type = "prompt"
+callbackhandler = "named" />
+
+<cfform>
+<cfinput name="enterstring" type="button" value="Prompt"
+onclick="showMB('getname')"> 
+</cfform>
+
+<cfscript> 
+length = Len(#named#)
+</cfscript>
+
+<cfoutput> "What is the input string? #named# 
+#br# 
+#named# has #length# characters" 
+</cfoutput>
