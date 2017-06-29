@@ -1,0 +1,31 @@
+<cfmessagebox 
+name = "getquote"
+icon = "question"
+message = "What is the quote?"
+type = "prompt"
+callbackhandler = "quoted" />
+
+<cfform>
+<cfinput name="enterquote" type="button" value="Prompt"
+onclick="showMB('getquote')"> 
+</cfform>
+
+<cfmessagebox 
+name = "getperson"
+icon = "question"
+message = "Who said it?"
+type = "prompt"
+callbackhandler = "person" />
+
+<cfform>
+<cfinput name="enterperson" type="button" value="Prompt"
+onclick="showMB('getperson')"> 
+</cfform>
+
+<cfoutput> 
+"What is the quote? #quoted# 
+#br#
+Who said it? #person#
+#br#
+#person# says, ""#quoted#"" "
+</cfoutput>
