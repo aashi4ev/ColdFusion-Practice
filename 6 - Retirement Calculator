@@ -22,14 +22,15 @@ callbackhandler = "retirement" />
 onclick="showMB('getretirement')"> 
 </cfform>
 
-<cfset currage = />
-<cfset retire = />
+<cfset currage = Val(currentage) />
+<cfset retire = Val(retirement) />
 
 <cfoutput>
 What is your current age? #currage#
 #br#
-At what age would you like to retire? #retirement#
+At what age would you like to retire? #retire#
+#br#
 You have #retire - currage# years left until you can retire. 
 #br#
-It's #year(now())#, so you can retire in DateAdd("y", now(), #retire - currage#).
+It's #year(now())#, so you can retire in #year(now())+retire-currage#.
 </cfoutput>
