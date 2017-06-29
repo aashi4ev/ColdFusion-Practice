@@ -27,7 +27,7 @@ out = out2;
 </cfscript>
 
 <cfoutput>
-"What is your name? #named# 
+What is your name? #named# 
 #br# 
 #out# 
 </cfoutput>
