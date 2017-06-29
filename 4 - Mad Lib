@@ -1,0 +1,59 @@
+<cfmessagebox 
+name = "getnoun"
+icon = "question"
+message = "What is the quote?"
+type = "prompt"
+callbackhandler = "noun" />
+
+<cfform>
+<cfinput name="enternoun" type="button" value="Prompt"
+onclick="showMB('getnoun')"> 
+</cfform>
+
+<cfmessagebox 
+name = "getverb"
+icon = "question"
+message = "What is the quote?"
+type = "prompt"
+callbackhandler = "verb" />
+
+<cfform>
+<cfinput name="enterverb" type="button" value="Prompt"
+onclick="showMB('getverb')"> 
+</cfform>
+
+<cfmessagebox 
+name = "getadjective"
+icon = "question"
+message = "What is the quote?"
+type = "prompt"
+callbackhandler = "adjective" />
+
+<cfform>
+<cfinput name="enteradjective" type="button" value="Prompt"
+onclick="showMB('getadjective')"> 
+</cfform>
+
+<cfmessagebox 
+name = "getadverb"
+icon = "question"
+message = "What is the quote?"
+type = "prompt"
+callbackhandler = "adverb" />
+
+<cfform>
+<cfinput name="enteradverb" type="button" value="Prompt"
+onclick="showMB('getadverb')"> 
+</cfform>
+
+<cfoutput>
+Enter a noun: #noun#
+#br#
+Enter a verb: #verb#
+#br#
+Enter an adjective: #adjective#
+#br#
+Enter an adverb: #adverb#
+#br#
+Do you #verb# your #adjective# #noun# #adverb#?
+</cfoutput>
