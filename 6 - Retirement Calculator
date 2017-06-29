@@ -31,5 +31,5 @@ What is your current age? #currage#
 At what age would you like to retire? #retirement#
 You have #retire - currage# years left until you can retire. 
 #br#
-It's #year#, so you can retire in #year + retire - currage#.
+It's #year(now())#, so you can retire in #year(now()) + retire - currage#.
 </cfoutput>
