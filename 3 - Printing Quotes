@@ -23,9 +23,9 @@ onclick="showMB('getperson')">
 </cfform>
 
 <cfoutput> 
-"What is the quote? #quoted# 
+What is the quote? #quoted# 
 #br#
 Who said it? #person#
 #br#
-#person# says, ""#quoted#"" "
+#person# says, ""#quoted#""
 </cfoutput>
