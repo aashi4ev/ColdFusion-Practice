@@ -14,7 +14,8 @@ onclick="showMB('getname')">
 length = Len(#named#)
 </cfscript>
 
-<cfoutput> "What is the input string? #named# 
+<cfoutput> 
+What is the input string? #named# 
 #br# 
-#named# has #length# characters" 
+#named# has #length# characters
 </cfoutput>
