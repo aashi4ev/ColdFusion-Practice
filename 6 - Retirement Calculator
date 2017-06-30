@@ -22,8 +22,8 @@ callbackhandler = "retirement" />
 onclick="showMB('getretirement')"> 
 </cfform>
 
-<cfset currage = Val(currentage) />
-<cfset retire = Val(retirement) />
+<cfset currage = LSParseNumber(currentage) />
+<cfset retire = LSParseNumber(retirement) />
 
 <cfoutput>
 What is your current age? #currage#
