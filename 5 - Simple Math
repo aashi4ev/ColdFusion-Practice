@@ -9,8 +9,9 @@ callbackhandler = "num1" />
 <cfinput name="enternum1" type="button" value="Prompt"
 onclick="showMB('getnum1')"> 
 </cfform>
+
 <cfmessagebox 
-ame = "getnum2"
+name = "getnum2"
 icon = "question"
 message = "What is the second number?"
 type = "prompt"
@@ -20,6 +21,9 @@ callbackhandler = "num2" />
 <cfinput name="enternum2" type="button" value="Prompt"
 onclick="showMB('getnum2')"> 
 </cfform>
+
+<cfset num1 = LSParseNumber(num1)/>
+<cfset num2 = LSParseNumber(num2)/>
 
 <cfoutput>
 What is the first number? #num1#
