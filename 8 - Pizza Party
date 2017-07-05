@@ -1,0 +1,22 @@
+<cfset people=#people# />
+<cfset pizzas = #pizzas# />
+<cfset pieces = #8 * pizzas# />
+<cfset leftover = #pieces mod people# />
+<cfif leftover EQ 0 >
+  <cfset each = #pieces/people# />
+  <cfelse>
+  <cfset each=#(pieces-leftover)/people# />
+</cfif>
+
+<cfoutput>
+How many people? #people#
+<br>
+How many pizzas do you have? #pizzas#
+<br>
+<br>
+#people# people with #pizzas# pizzas.
+<br>
+Each person gets #each# pieces of pizzas.
+<br>
+There are #leftover# leftover pieces.
+</cfoutput>
