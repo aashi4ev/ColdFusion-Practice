@@ -1,0 +1,14 @@
+<cfset length=#length#/>
+<cfset width = #width# />
+<cfset areaf = #length * width# />
+<cfset aream = #((areaf^2)*0.09290304)^0.5)# />
+
+<cfoutput>
+What is the length of the room in feet? #length#
+<br>
+What is the width of the room in feet? #width#
+<br>
+You entered dimensions of #length# feet by #width# feet.
+<br>
+The area is #areaf# square feet which is equivalent to #aream#.
+</cfoutput>
