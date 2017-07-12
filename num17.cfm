@@ -1,6 +1,6 @@
 <cfsetting EnableCFOutputOnly="true">
 <cfparam name="$weight" type="numeric">
-<cfparam name="$gender" type="string">
+<cfparam name="$gender" type="regex" pattern="(?i)F|M">
 <cfparam name="$drinks" type="numeric" default=0>
 <cfparam name="$volume" type="numeric">
 <cfparam name="$hours" type="numeric" default=0>
