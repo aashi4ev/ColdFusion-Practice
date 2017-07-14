@@ -1,3 +1,5 @@
+<cfoutput> #CompareLists(["a","b","s"], ["s","b","a"])# </cfoutput>
+
 <cfset num = "36fk"/>
 <cfset string = "calendar_#Val(num)#.kl"/>
 <cfoutput>
