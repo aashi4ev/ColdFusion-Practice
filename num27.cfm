@@ -25,24 +25,20 @@ Enter the ZIP code: #$zip#
 Enter an employee ID: #$ID#
 #maybe# </cfoutput>
 </cffunction>
-
 <cffunction name="validateFirst" returnType="string">
 	<cfargument name="$first">
 	<cfreturn (Len($first) EQ 0 ? "The first name must be filled in." : Len($first) LT 2 ? ""#$first#" is not a valid first name." : "" )>
 </cffunction>
-
 <cffunction name="validateLast">
 	<cfargument name="$last">
 	<cfreturn (Len($last) EQ 0 ? "The last name must be filled in." : Len($last) LT 2 ? ""#$last#" is not a valid last name." : "" )>
 </cffunction>
-
 <cffunction name="validateZip">
 	<cfargument name="$zip">
 	<cfif refind([a-z], "$zip")>
 		<cfreturn "The ZIP code must be numeric.">
 	</cfif>
 </cffunction>
-
 <cffunction name="validateID">
 	<cfargument name="$ID">
 	<cfif Len($ID) NEQ 7>
